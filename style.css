@@ -2221,3 +2221,245 @@ footer {
         text-align: center;
     }
 }
+
+/* =========================================================
+   20 — LANGUAGE SWITCHER
+========================================================= */
+
+.language-switcher {
+    width: 48px;
+    height: 38px;
+
+    margin-right: 18px;
+
+    border: 1px solid #d8e0e8;
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #12233f;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+.language-switcher:hover {
+    background: #12233f;
+    color: #ffffff;
+    border-color: #12233f;
+}
+
+
+/* =========================================================
+   ENGLISH MODE
+========================================================= */
+
+html[dir="ltr"] body {
+
+    direction: ltr;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+}
+
+
+/* Header */
+
+html[dir="ltr"] .header {
+    right: auto;
+    left: 0;
+}
+
+html[dir="ltr"] .menu a::after {
+    right: auto;
+    left: 0;
+}
+
+
+/* Hero */
+
+html[dir="ltr"] .hero-content {
+    direction: ltr;
+}
+
+html[dir="ltr"] .hero-text {
+    text-align: left;
+}
+
+html[dir="ltr"] .hero-description {
+    text-align: left;
+}
+
+html[dir="ltr"] .hero-buttons {
+    justify-content: flex-start;
+}
+
+
+/* About */
+
+html[dir="ltr"] .about-grid {
+    direction: ltr;
+}
+
+html[dir="ltr"] .about-text {
+    text-align: left;
+}
+
+html[dir="ltr"] .quote {
+    border-right: 0;
+    border-left: 4px solid #0f766e;
+}
+
+
+/* Section headings */
+
+html[dir="ltr"] .section-heading {
+    text-align: left;
+}
+
+html[dir="ltr"] .section-heading.center {
+    text-align: center;
+}
+
+
+/* Mentoring */
+
+html[dir="ltr"] .process-card {
+    text-align: left;
+}
+
+
+/* Student */
+
+html[dir="ltr"] .student-content {
+    text-align: left;
+}
+
+html[dir="ltr"] .project-tag {
+    right: auto;
+    left: 15px;
+}
+
+
+/* Professional projects */
+
+html[dir="ltr"] .professional-project {
+    direction: ltr;
+}
+
+html[dir="ltr"] .professional-project-content {
+    text-align: left;
+}
+
+html[dir="ltr"] .project-top {
+    direction: ltr;
+}
+
+html[dir="ltr"] .project-year {
+    right: auto;
+    left: 25px;
+}
+
+html[dir="ltr"] .visual-code {
+    left: auto;
+    right: 25px;
+}
+
+
+/* Portfolio statement */
+
+html[dir="ltr"] .portfolio-statement {
+    direction: ltr;
+}
+
+
+/* CTA */
+
+html[dir="ltr"] .cta-box {
+    direction: ltr;
+}
+
+html[dir="ltr"] .cta-box > div {
+    text-align: left;
+}
+
+
+/* Contact */
+
+html[dir="ltr"] .contact-card {
+    direction: ltr;
+}
+
+html[dir="ltr"] .contact-card div {
+    text-align: left;
+}
+
+
+/* Footer */
+
+html[dir="ltr"] .footer-content {
+    direction: ltr;
+}
+
+
+/* =========================================================
+   LANGUAGE BUTTON — MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .language-switcher {
+        margin-right: 10px;
+        margin-left: auto;
+    }
+
+    html[dir="ltr"] .language-switcher {
+        margin-left: 10px;
+        margin-right: auto;
+    }
+
+}
+
+
+/* =========================================================
+   ENGLISH MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    html[dir="ltr"] .hero-text,
+    html[dir="ltr"] .hero-description,
+    html[dir="ltr"] .about-text,
+    html[dir="ltr"] .section-heading,
+    html[dir="ltr"] .process-card,
+    html[dir="ltr"] .student-content,
+    html[dir="ltr"] .professional-project-content,
+    html[dir="ltr"] .cta-box > div {
+        text-align: left;
+    }
+
+    html[dir="ltr"] .hero-buttons {
+        justify-content: center;
+    }
+
+    html[dir="ltr"] .section-heading.center {
+        text-align: center;
+    }
+
+}
+@media (max-width: 900px) {
+
+    html[dir="ltr"] .menu {
+        right: auto;
+        left: 0;
+    }
+
+}
