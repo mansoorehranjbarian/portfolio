@@ -69,12 +69,19 @@ const translations = {
             "این بخش برای نمایش پروژه‌ها، ویدئوها و پیشرفت کارآموزانی است که در مسیر منتورینگ با من کار کرده‌اند.",
 
         studentMeta: "پروژه منتورینگ",
-        studentTitle: "پروژه بازی Minecraft",
-        studentDescription:
-            "نمونه‌ای از خروجی پروژه‌محور یکی از کارآموزان؛ از یادگیری مفاهیم Python تا ساخت یک پروژه قابل ارائه.",
+        studentTitle: "پیاده‌سازی بازی ماینکرفت دسکتاپ",
 
+        studentDescription:
+            "در این پروژه، کارآموز آموخته‌های خود در برنامه‌نویسی Python را در قالب یک بازی دسکتاپ به کار گرفت. این تجربه فرصتی برای تمرین کدنویسی، حل مسئله، رفع خطا و تبدیل ایده به یک پروژه عملی بود.",
         resultsNote:
             "این بخش به مرور با پروژه‌ها و نتایج جدید کارآموزان تکمیل می‌شود.",
+
+
+        student2Title: "نرم‌افزار مدیریت صندوق قرض‌الحسنه",
+
+        student2Description:
+            "طراحی و پیاده‌سازی یک نرم‌افزار دسکتاپ برای مدیریت صندوق با Python و PySide6؛ تجربه‌ای عملی در تبدیل نیاز واقعی به یک برنامه کاربردی.",
+
 
         projectsLabel: "تجربه و نمونه‌کار",
         projectsTitle: "پروژه‌های واقعی،<br><strong>تجربه واقعی</strong>",
@@ -197,9 +204,16 @@ const translations = {
             "This section showcases projects, videos, and progress from trainees who have worked with me through the mentoring process.",
 
         studentMeta: "Mentoring Project",
-        studentTitle: "Minecraft Game Project",
+        studentTitle: "Minecraft Desktop Game Development",
+
         studentDescription:
-            "An example of a project-based result from one of my trainees, from learning Python concepts to building a presentable project.",
+            "In this project, the trainee applied their Python programming knowledge to build a desktop game. The project provided hands-on experience in coding, problem-solving, debugging, and turning an idea into a working application.",
+
+        student2Title: "Loan Fund Management Application",
+
+        student2Description:
+            "Designed and developed a desktop application for managing a loan fund using Python and PySide6, turning a real-world need into a practical software solution.",
+
 
         resultsNote:
             "This section will gradually be expanded with new trainee projects and results.",
@@ -315,8 +329,13 @@ function getLanguageElements() {
         studentsIntro: document.querySelector("#students .section-heading p"),
 
         studentMeta: document.querySelector(".student-meta span:first-child"),
-        studentTitle: document.querySelector(".student-content h3"),
-        studentDescription: document.querySelector(".student-content p"),
+        studentTitle: document.querySelector('[data-i18n="studentTitle"]'),
+
+        studentDescription: document.querySelector('[data-i18n="studentDescription"]'),
+        student2Title: document.querySelector('[data-i18n="student2Title"]'),
+        student2Description: document.querySelector('[data-i18n="student2Description"]'),
+
+
         resultsNote: document.querySelector(".results-note span"),
 
         projectsLabel: document.querySelector("#projects .section-heading > span"),
